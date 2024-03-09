@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontact Os</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <style>
+        body {
+            margin: 0px 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 6rem !important;
+        }
+
+        .socials a i {
+            color: white !important;
+            font-size: 35px;
+        }
+
+        /*PAGE HEAD*/
+        .page-head{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.836);
+            color: white;
+            padding-left: 7rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 4rem;
+        }
+        /*Form*/
+        .fomr-desc{
+            text-align: center;
+            font-size: 20px;
+        }
+        .form-cont,.form-head,.form-foot,.form-btn{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        form{
+            margin: 2rem 0px;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        } 
+        form label{
+            font-weight: bold;
+            font-size: 18px;
+        } 
+        .form-row{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            width: 100%;
+        }
+        .form-row input{
+            width: 400px;
+        }
+        .form-foot{
+            font-size: 20px;
+        }
+        .besked-btn{
+            border: none;
+            background-color:#D4BE74 ;
+            padding: 0.8rem 4rem;
+            font-size: 20px;
+            font: italic;
+            border-radius: 9px;
+        }
+        .form-btn{
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+        }
+        .form-desc{
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-head">
+                <h2>Woodworks Musik</h2>
+                <h4>Butik og vaerksted</h4>
+            </div>
+            <div class="nav-box">
+                <div class="nav-search">
+                    <input type="text" placeholder="Søg" class="form-control px-6">
+                    <button class="btn btn-light search-btn px-4 ">Kontakt</button>
+                </div>
+                <div class="socials nav-socials">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-google"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a> &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="">Strenge</a>
+            <a href="">Strygere</a>
+            <a href="">Guitarer & Folk</a>
+            <a href="">Tilbehor</a>
+            <a href="">Materialer</a>
+            <a href="">Vaerktoj</a>
+            <a href="">Reparationer</a>
+        </div>
+    </nav>
+    <div class="page-head">
+        <h4>FORSIDE / KONTAKT OS</h4>
+    </div>
+    <main>
+        <div class="form-head">
+            <h2>Kontakt OS</h2>
+            <div class="form-desc">
+                Nam scelerisque odio.Suspendisse fermentum faucibus felis.Praesent pharetra. <br>
+                In consequat felis in tellus.In mi enim,rhoncus ullamcorper,sagittis at,placerat <br>
+                eget mauris.Suspendisse auctor erat at ipsum.Aliquam vitae tortor id massa tincidunt eleifend.
+            </div>
+        </div>
+        <div class="form-cont">
+            <form action="">
+                <div class="form-row">
+                    <label for="fornavn" class="form-label">Fornavn
+                        <input type="text" name="fornavn" id="fornavn" class="form-control">
+                    </label>
+                    <label for="efternavn" class="form-label">Efternavn
+                        <input type="text" name="efternavn" id="efternavn" class="form-control">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="e_mailadresse" class="form-label">E-mailadresse
+                        <input type="text" id="e_mailadresse" class="form-control">
+                    </label>
+                    <label for="telefonnummer" class="form-label">Telefonnummer
+                        <input type="text" name="telefonnummer" id="telefonnummer" class="form-control">
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="henvendelse" class="form-label">Henvendelse
+                        <textarea name="henvendelse" id="henvendelse" class="form-control" cols="105" rows="10"></textarea>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="form-foot">
+            Woodworks Musik benytter ovenstaende oplysniger til at <br>
+            svare pa din henvendelse hvorefter oplysningerne slettes.
+        </div>
+        <div class="form-btn">
+            <button class="besked-btn">Send Besked</button>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="box1">
+                <h3>Woodworks Musik <br>
+                    Butik og vaertsted</h3>
+                <p></p>
+                <p>Butik og vaerksted med speciale i akustiske strengeinstrumenter.</p>
+                <p>Salge,service og reparation.</p>
+                <p>Du er altid (24/7) velkommen til at kontake os.</p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> &nbsp; Nygade 24(1.sal i garden),
+                    8600 Silkeborg
+                </p>
+                <p>
+                    <i class="fa-solid fa-globe"></i> &nbsp; Denmark
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i> &nbsp; +45 40 18 01 43
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i> &nbsp; info@woodworks.dk
+                </p>
+                <p>
+                    <i class="fa-solid fa-file"></i> &nbsp; 40 95 16 95
+                </p>
+                <p>
+                    Abningstider:
+                    Hverdage: 10 - 17
+                    Weekends: Lukket
+                    Ellers efter aftale.
+                </p>
+            </div>
+            <div class="box2">
+                <h3>
+                    Tilmeld dig vores <br>
+                    nyhedsbrev
+                </h3>
+                <p class="email">
+                    <input type="text" placeholder="E-mail" required class="form-control" id="email">
+                    <button class="telmeld-btn">Tilmeld</button>
+                </p>
+                <p>
+                    Nyhedsbrevet udkommer ca. 4 gange <br>
+                    om aret. Du kan altid afmelde det igen.
+                </p>
+                <h4>
+                    Brug for hjaelp?
+                </h4>
+                <p>
+                    <button class="btn btn-light px-3 border-black py-2 fs-5 ">Kontakt</button>
+                </p>
+                <h3>Følg os</h3>
+                <div class="socials">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-google"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a> &nbsp;
+                </div>
+            </div>
+            <div class="box3">
+                <h3>Information</h3>
+                <p>
+                    Om Woodworks Musik <br>
+                    Kontakt os <br>
+                    Abningstider <br>
+                    Find os <br>
+                    kig ind i butik og vaerksted
+                </p>
+                <p>
+                    Sadan handler du hos os <br>
+                    Almindelige sporgsmal <br>
+                    Handelsbetingelser <br>
+                    Persondatapolitik <br>
+                    Kundeservice
+                </p>
+                <p>Nyttige links</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Woodworks Musik / Oxlund Design & Udvikling </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
