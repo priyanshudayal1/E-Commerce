@@ -28,6 +28,12 @@
             padding: 5px ;
             border-radius: 5px;
         }
+        .right img {
+            /* Rotate the image by 45 degrees */
+            transform: rotate(180deg);
+            z-index: 100;
+            top: -2;
+          }
         
        
 
@@ -70,7 +76,10 @@
    
     <main>
         <div class="hero-container">
-            <div class="arrow left" onclick="prevSlide()">&#10094;</div>
+            <div class="arrow left" onclick="prevSlide()">
+                <img src="./assests/front page assets/carrousel arrow left.svg" alt="">
+                
+            </div>
             <div class="slider">
                 <div class="slide">
                     <img src="./assests/hero/hero-img1.jpeg" alt="Image 1">
@@ -97,7 +106,9 @@
                     </div>
                 </div>
             </div>
-            <div class="arrow right" onclick="nextSlide()">&#10095;</div>
+            <div class="arrow right" onclick="nextSlide()">
+                <img src="./assests/front page assets/carrousel arrow left.svg" alt="">
+            </div>
             <div class="dots-container">
                 <div class="dot" onclick="showSlide(0)"></div>
                 <div class="dot" onclick="showSlide(1)"></div>
