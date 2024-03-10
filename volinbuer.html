@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violinbuer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="violinbuer.css">
+    <style>
+        body {
+            margin: 0px 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 6rem !important;
+        }
+
+        .socials a i {
+            color: white !important;
+            font-size: 35px;
+            fill: black;
+        }
+
+        /*MAIN HEADING*/
+        .main-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin-bottom: 4rem;
+        }
+
+        /*Filter box*/
+        .filter-options {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #D4BE74;
+            margin-bottom: 2rem;
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+
+        .sort-filter {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .filter-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .btn i {
+            color: #D4BE74;
+            font-size: 20px;
+        }
+
+        /*PRoduct container*/
+        .products-container {
+            margin: 2rem 5rem;
+            padding: 2rem 8rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            /* Adds two rows */
+            gap: 80px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+            text-align: center;
+            border: none;
+            height: 600px;
+        }
+        .product:hover{
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            max-width: 100%;
+            /* Ensure the image doesn't exceed the container width */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-bottom: 10px;
+            border-radius: 2px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Add some space below the image */
+        }
+
+        .heart-icon {
+            display: flex;
+            justify-content: end;
+            font-size: 22px;
+            color: gray;
+        }
+
+        .heart-icon:hover {
+            fill: red;
+
+            cursor: pointer;
+        }
+
+        .prod-desc{
+            margin-top: 2rem ;
+            display: flex !important;
+            flex-direction: column;
+            margin-bottom: 5rem;
+        }
+        #prod-name{
+            text-align: start;
+            font-size: 27px;
+        }
+        #prod-model{
+            text-align: start;
+            font-size: 15px;
+        }
+        #prod-model span{
+            color: #D4BE74;
+        }
+        .prod-price{
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+            text-align: start;
+            font-size: 20px;
+        }
+
+        .color-lines {
+            margin: 0.7rem 40px;
+            display: flex;
+            justify-content: center;
+            gap: 7px ;
+        }
+
+        .color-line {
+            height: 3px;
+            width: 10%;
+        }
+
+        .line1 {
+            background-color: #D9C68A; /* Blue color */
+        }
+
+        .line2 {
+            background-color: #4B4B4B; /* Red color */
+        }
+
+        .line3 {
+            background-color: #B2B2B2; /* Green color */
+        }
+        .line1:hover{
+            transform: scale(120%);
+        }
+        .line2:hover{
+            transform: scale(120%);
+        }
+        .line3:hover{
+            transform: scale(120%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-head">
+                <img src="./assests/main logo/wordmark logo.svg" width="100%" alt="">
+            </div>
+            <div class="nav-box">
+                <div class="nav-search">
+                    <div id="search-icon"><i class="fas fa-search"></i></div>
+                    <input type="text" placeholder="Søg" class="form-control px-6">
+                    <button class="btn btn-light search-btn px-4 ">Kontakt</button>
+                </div>
+                <div class="socials nav-socials">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-google"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a> &nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="">Strenge</a>
+            <a href="">Strygere</a>
+            <a href="">Guitarer & Folk</a>
+            <a href="">Tilbehor</a>
+            <a href="">Materialer</a>
+            <a href="">Vaerktoj</a>
+            <a href="">Reparationer</a>
+        </div>
+    </nav>
+
+    <div class="page-head">
+        <h4>FORSIDE / BUTIK / STRYGERE & BUER / BUER / VIOLINBUER</h4>
+    </div>
+
+    <main>
+        <div class="main-head">
+            <div class="main-heading">
+                Violinbuer
+            </div>
+            <div class="filter-options">
+                <div class="sort-filter">
+                    <button class="btn filter-btn">Sorter &nbsp; <i class="fa-solid fa-sort-down"></i></button>
+                    <button class="btn filter-btn">Filtrer &nbsp; <i class="fa-solid fa-sort-down"></i></button>
+                </div>
+                <div class="visning">
+                    <button class="btn filter-btn">Vising &nbsp; <i class="fa-solid fa-sort-down"></i></button>
+                </div>
+            </div>
+            <div class="products-container">
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+                <div class="product">
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <!-- Content for the first box goes here -->
+                    <img src="./prod.jpg" alt="Product 1">
+                    <div class="color-lines">
+                        <div class="color-line line1"></div>
+                        <div class="color-line line2"></div>
+                        <div class="color-line line3"></div>
+                        <div class="color-line line2"></div>
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Octagon</span>
+                        <span id="prod-model">fra <span>Knoll</span></span>
+                    </div>
+                    <div class="prod-price">
+                        5.199,00 kr.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="box1">
+                <h3>Woodworks Musik <br>
+                    Butik og vaertsted</h3>
+                <p></p>
+                <p>Butik og vaerksted med speciale i akustiske strengeinstrumenter.</p>
+                <p>Salge,service og reparation.</p>
+                <p>Du er altid (24/7) velkommen til at kontake os.</p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> &nbsp; Nygade 24(1.sal i garden),
+                    8600 Silkeborg
+                </p>
+                <p>
+                    <i class="fa-solid fa-globe"></i> &nbsp; Denmark
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i> &nbsp; +45 40 18 01 43
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i> &nbsp; info@woodworks.dk
+                </p>
+                <p>
+                    <i class="fa-solid fa-file"></i> &nbsp; 40 95 16 95
+                </p>
+                <p>
+                    Abningstider:
+                    Hverdage: 10 - 17
+                    Weekends: Lukket
+                    Ellers efter aftale.
+                </p>
+            </div>
+            <div class="box2">
+                <h3>
+                    Tilmeld dig vores <br>
+                    nyhedsbrev
+                </h3>
+                <p class="email">
+                    <input type="text" placeholder="E-mail" required class="form-control" id="email">
+                    <button class="telmeld-btn">Tilmeld</button>
+                </p>
+                <p>
+                    Nyhedsbrevet udkommer ca. 4 gange <br>
+                    om aret. Du kan altid <span class="gold-text">afmelde</span> det igen.
+                </p>
+                <h4>
+                    Brug for hjaelp?
+                </h4>
+                <p>
+                    <button class="btn btn-light px-4 border-black py-2 fs-5 kontakt-btn">Kontakt</button>
+                </p>
+                <h3>Følg os</h3>
+                <div class="socials">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-google"></i></a> &nbsp;
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a> &nbsp;
+                </div>
+            </div>
+            <div class="box3">
+                <h3>Information</h3>
+                <p>
+                    Om Woodworks Musik <br>
+                    Kontakt os <br>
+                    Abningstider <br>
+                    Find os <br>
+                    kig ind i butik og vaerksted
+                </p>
+                <p>
+                    Sadan handler du hos os <br>
+                    Almindelige sporgsmal <br>
+                    Handelsbetingelser <br>
+                    Persondatapolitik <br>
+                    Kundeservice
+                </p>
+                <p>Nyttige links</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Woodworks Musik / Oxlund Design & Udvikling </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

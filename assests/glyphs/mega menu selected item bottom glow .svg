@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 205 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-30880,-15252.7)">
+        <g transform="matrix(1,0,0,1,2807.2,-2186)">
+            <g id="underline--shooting-star-animation--" serif:id="underline (shooting star animation?)" transform="matrix(0.765573,0,0,1,27688.4,17000.4)">
+                <path d="M504.297,439.945L766.845,439.945" style="fill:none;stroke:url(#_Linear1);stroke-width:2.04px;"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(262.548,-1.47793e-12,7.391e-13,525,504.297,439.945)"><stop offset="0" style="stop-color:rgb(212,190,116);stop-opacity:0"/><stop offset="0.09" style="stop-color:rgb(212,189,115);stop-opacity:0.4"/><stop offset="0.19" style="stop-color:rgb(212,189,115);stop-opacity:0.77"/><stop offset="0.5" style="stop-color:rgb(212,189,115);stop-opacity:0.92"/><stop offset="0.81" style="stop-color:rgb(212,189,115);stop-opacity:0.77"/><stop offset="0.91" style="stop-color:rgb(212,189,115);stop-opacity:0.4"/><stop offset="1" style="stop-color:rgb(212,189,115);stop-opacity:0"/></linearGradient>
+    </defs>
+</svg>

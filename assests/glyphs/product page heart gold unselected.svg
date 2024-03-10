@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 30 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+        <g id="heart" transform="matrix(1.04826,0,0,1.04826,0.269262,-0.000241478)">
+            <path d="M0,1.64C0,-0.11 2.055,-0.693 3.082,1.057C4.109,-0.693 6.164,-0.11 6.164,1.64C6.164,2.807 5.137,4.168 3.082,5.724C1.027,4.168 0,2.807 0,1.64ZM0.7,1.64C0.7,2.097 0.927,2.581 1.329,3.114C1.739,3.657 2.324,4.229 3.082,4.837C3.84,4.229 4.425,3.657 4.835,3.114C5.237,2.581 5.464,2.097 5.464,1.64C5.464,1.151 5.212,0.8 4.853,0.718C4.453,0.628 4.006,0.866 3.686,1.411C3.56,1.625 3.33,1.757 3.082,1.757C2.834,1.757 2.604,1.625 2.478,1.411C2.159,0.866 1.711,0.628 1.311,0.718C0.952,0.8 0.7,1.151 0.7,1.64Z" style="fill:rgb(212,189,115);"/>
+        </g>
+    </g>
+</svg>
