@@ -22,154 +22,6 @@
             justify-content: space-between;
             padding: 2rem 6rem !important;
         }
-
-        .socials a i {
-            color: white !important;
-            font-size: 35px;
-            fill: black;
-        }
-
-        /*MAIN HEADING*/
-        .main-heading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            margin-bottom: 4rem;
-        }
-
-        /*Filter box*/
-        .filter-options {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 2px solid #D4BE74;
-            margin-bottom: 2rem;
-            margin-left: 4rem;
-            margin-right: 4rem;
-        }
-
-        .sort-filter {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .filter-btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-        }
-
-        .btn i {
-            color: #D4BE74;
-            font-size: 20px;
-        }
-
-        /*PRoduct container*/
-        .products-container {
-            margin: 2rem 5rem;
-            padding: 2rem 8rem;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            /* Adds two rows */
-            gap: 80px;
-        }
-
-        .product {
-            border: 1px solid #ccc;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
-            text-align: center;
-            border: none;
-            height: 600px;
-        }
-        .product:hover{
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .product img {
-            max-width: 100%;
-            /* Ensure the image doesn't exceed the container width */
-            height: auto;
-            /* Maintain aspect ratio */
-            margin-bottom: 10px;
-            border-radius: 2px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            /* Add some space below the image */
-        }
-
-        .heart-icon {
-            display: flex;
-            justify-content: end;
-            font-size: 22px;
-            color: gray;
-        }
-
-        .heart-icon:hover {
-            fill: red;
-
-            cursor: pointer;
-        }
-
-        .prod-desc{
-            margin-top: 2rem ;
-            display: flex !important;
-            flex-direction: column;
-            margin-bottom: 5rem;
-        }
-        #prod-name{
-            text-align: start;
-            font-size: 27px;
-        }
-        #prod-model{
-            text-align: start;
-            font-size: 15px;
-        }
-        #prod-model span{
-            color: #D4BE74;
-        }
-        .prod-price{
-            display: flex;
-            justify-content: end;
-            flex-direction: column;
-            text-align: start;
-            font-size: 20px;
-        }
-
-        .color-lines {
-            margin: 0.7rem 40px;
-            display: flex;
-            justify-content: center;
-            gap: 7px ;
-        }
-
-        .color-line {
-            height: 3px;
-            width: 10%;
-        }
-
-        .line1 {
-            background-color: #D9C68A; /* Blue color */
-        }
-
-        .line2 {
-            background-color: #4B4B4B; /* Red color */
-        }
-
-        .line3 {
-            background-color: #B2B2B2; /* Green color */
-        }
-        .line1:hover{
-            transform: scale(120%);
-        }
-        .line2:hover{
-            transform: scale(120%);
-        }
-        .line3:hover{
-            transform: scale(120%);
-        }
     </style>
 
 </head>
@@ -182,16 +34,16 @@
             </div>
             <div class="nav-box">
                 <div class="nav-search">
-                    <div id="search-icon"><i class="fas fa-search"></i></div>
+                    <div id="search-icon"><img src="./assests//glyphs/search magnifying glass.svg" width="20px" height="20px" alt=""></div>
                     <input type="text" placeholder="Søg" class="form-control px-6">
                     <button class="btn btn-light search-btn px-4 ">Kontakt</button>
                 </div>
-                <div class="socials nav-socials">
-                    <a href=""><i class="fa-brands fa-square-facebook"></i></a> &nbsp;
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a> &nbsp;
-                    <a href=""><i class="fa-brands fa-google"></i></a> &nbsp;
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a> &nbsp;
-                </div>
+                <div class="socials">
+                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/google.svg" alt="google" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/linkedin.svg"  alt="linkedin" width="40px"></a></a> &nbsp;
+                </div> 
             </div>
         </div>
         <div class="nav-links">
@@ -205,6 +57,7 @@
         </div>
     </nav>
 
+    <!-- PAGE HEADING -->
     <div class="page-head">
         <h4>FORSIDE / BUTIK / STRYGERE & BUER / BUER / VIOLINBUER</h4>
     </div>
@@ -216,23 +69,45 @@
             </div>
             <div class="filter-options">
                 <div class="sort-filter">
-                    <button class="btn filter-btn">Sorter &nbsp; <i class="fa-solid fa-sort-down"></i></button>
-                    <button class="btn filter-btn">Filtrer &nbsp; <i class="fa-solid fa-sort-down"></i></button>
+                    <img id="Sorter" src="./assests/glyphs/product overview sort downward arrow.svg" width="15px" alt="">
+                    <select name="Sorter" id="" class="filter-btn form-select">
+                        <option selected>Sorter &nbsp; </option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                    <div class="gold-line"></div>
+                    <img id="Filtrer" src="./assests/glyphs/product overview sort downward arrow.svg" width="15px" alt="">
+                    <select name="Filtrer" id="" class="filter-btn form-select">
+                        <option selected>Filtrer &nbsp; </option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
                 </div>
                 <div class="visning">
-                    <button class="btn filter-btn">Vising &nbsp; <i class="fa-solid fa-sort-down"></i></button>
+                    <img id="visning" src="./assests/glyphs/product overview sort downward arrow.svg" width="15px" alt="">
+                    <select name="sort_by" id="" class="filter-btn form-select">
+                        <option selected>Vising &nbsp; </option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
                 </div>
             </div>
             <div class="products-container">
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span> <br>
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 1 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
                         <span id="prod-name">Octagon</span>
@@ -243,156 +118,183 @@
                     </div>
                 </div>
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 2 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
+                        <span id="prod-name">Escent</span>
+                        <span id="prod-model">fra <span>Coda</span></span>
                     </div>
                     <div class="prod-price">
-                        5.199,00 kr.
+                        Fra 7.299,00 kr.
                     </div>
 
                 </div>
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
+                    <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button>
+
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 3 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
+                        <span id="prod-name">Lothar Seifert Pernambuco Special Edition</span>
+                        <span id="prod-model">fra <span>Coda</span></span>
                     </div>
+                    <span class="pro-discount">
+                        <span id="cutted-text">Fra 7.499,95 kr. </span> <span id="red-text">&nbsp; (-16%)</span>
+                    </span>
                     <div class="prod-price">
-                        5.199,00 kr.
+                       Fra 6.299,95 kr.
                     </div>
 
                 </div>
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 4 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
+                        <span id="prod-name">H82 PERNAMBUCO</span>
+                        <span id="prod-model">fra <span>Hofner</span></span>
                     </div>
                     <div class="prod-price">
-                        5.199,00 kr.
+                        7.899,00 kr.
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
+                    <!-- Content for the first box goes here -->
+                    <img src="./assests/product assets/product item 5 violin bow.webp" alt="Product 1">
+                    <div class="color-lines">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                    </div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Diamond GX</span>
+                        <span id="prod-model">fra <span>Coda</span></span>
+                    </div>
+                    <div class="prod-price">
+                       Hojst 5.499,00 kr.
                     </div>
 
                 </div>
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
+                    <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button>
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 6 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
+                        <span id="prod-name">Octagon Signature
+                        </span>
+                        <span id="prod-model">fra <span>Dorfler</span></span>
                     </div>
+                    <span class="pro-discount">
+                        <span id="cutted-text">Fra 2.000,00 kr. </span> <span id="red-text">&nbsp; (-16%)</span>
+                    </span>
                     <div class="prod-price">
-                        5.199,00 kr.
+                        Fra 1.720,00 kr.
                     </div>
 
                 </div>
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
+                    <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button>
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 4 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
+                        <span id="prod-name">Virtuoso</span>
+                        <span id="prod-model">fra <span>Stolz</span></span>
                     </div>
+                    <span class="pro-discount">
+                        <span id="cutted-text">Fra 7.499,95 kr. </span> <span id="red-text">&nbsp; (-16%)</span>
+                    </span>
                     <div class="prod-price">
-                        5.199,00 kr.
+                        Fra 6.299,00 kr.
                     </div>
 
                 </div>
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 7 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
+                        <span id="prod-name">Luminant</span>
+                        <span id="prod-model">fra <span>Stolz</span></span>
                     </div>
                     <div class="prod-price">
-                        5.199,00 kr.
+                       Fra 995,00 kr.
                     </div>
 
                 </div>
                 <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg" alt=""></span>
+                    <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button>
                     <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
+                    <img src="./assests/product assets/product item 6 violin bow.webp" alt="Product 1">
                     <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg" alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg" alt="color_option">
                     </div>
                     <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
+                        <span id="prod-name">Signature</span>
+                        <span id="prod-model">fra <span>Stolz</span></span>
                     </div>
+                    <span class="pro-discount">
+                        <span id="cutted-text">Fra 2.300,95 kr. </span>
+                    </span>
                     <div class="prod-price">
-                        5.199,00 kr.
+                        1.790,00 kr.
                     </div>
-
                 </div>
-                <div class="product">
-                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span> <br>
-                    <!-- Content for the first box goes here -->
-                    <img src="./prod.jpg" alt="Product 1">
-                    <div class="color-lines">
-                        <div class="color-line line1"></div>
-                        <div class="color-line line2"></div>
-                        <div class="color-line line3"></div>
-                        <div class="color-line line2"></div>
-                    </div>
-                    <div class="prod-desc">
-                        <span id="prod-name">Octagon</span>
-                        <span id="prod-model">fra <span>Knoll</span></span>
-                    </div>
-                    <div class="prod-price">
-                        5.199,00 kr.
-                    </div>
-
+            </div>
+            <div class="pages">
+                <div class="button-line">
+                    <button class="btn px-3 numbered-button active">1</button>
+                    <button class="btn px-3 numbered-button">2</button>
+                    <button class="btn px-3 numbered-button">3</button>
+                    <button class="btn px-3 numbered-button">4</button>
+                    <button class="btn px-3 numbered-button">5</button>
+                    <button class="btn px-3 numbered-button">6</button>
+                    <button class="btn px-3 numbered-button">7</button>
                 </div>
             </div>
         </div>
@@ -409,20 +311,20 @@
                 <p>Salge,service og reparation.</p>
                 <p>Du er altid (24/7) velkommen til at kontake os.</p>
                 <p>
-                    <i class="fa-solid fa-location-dot"></i> &nbsp; Nygade 24(1.sal i garden),
+                    <img src="./assests/glyphs/location pin.svg" width="20px" alt=""> &nbsp; Nygade 24(1.sal i garden),
                     8600 Silkeborg
                 </p>
                 <p>
-                    <i class="fa-solid fa-globe"></i> &nbsp; Denmark
+                    <img src="./assests/glyphs/globe.svg" width="20px" alt=""> &nbsp; Denmark
                 </p>
                 <p>
-                    <i class="fa-solid fa-phone"></i> &nbsp; +45 40 18 01 43
+                    <img src="./assests/glyphs/phone copy.svg" width="20px" alt=""> &nbsp; +45 40 18 01 43
                 </p>
                 <p>
-                    <i class="fa-solid fa-envelope"></i> &nbsp; info@woodworks.dk
+                    <img src="./assests/glyphs/email.svg" width="20px" alt=""> &nbsp; info@woodworks.dk
                 </p>
                 <p>
-                    <i class="fa-solid fa-file"></i> &nbsp; 40 95 16 95
+                    <img src="./assests/glyphs/CVR.svg" width="20px" alt=""> &nbsp; 40 95 16 95
                 </p>
                 <p>
                     Abningstider:
@@ -452,10 +354,10 @@
                 </p>
                 <h3>Følg os</h3>
                 <div class="socials">
-                    <a href=""><i class="fa-brands fa-square-facebook"></i></a> &nbsp;
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a> &nbsp;
-                    <a href=""><i class="fa-brands fa-google"></i></a> &nbsp;
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/google.svg" alt="google" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/linkedin.svg"  alt="linkedin" width="40px"></a></a> &nbsp;
                 </div>
             </div>
             <div class="box3">

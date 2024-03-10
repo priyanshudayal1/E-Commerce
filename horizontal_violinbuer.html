@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontact Os</title>
+    <title>Violinbuer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="kontakt_os.css">
+    <link rel="stylesheet" href="violinbuer.css">
     <style>
         body {
             margin: 0px 2rem;
@@ -23,16 +23,45 @@
             padding: 2rem 6rem !important;
         }
 
-        .socials a{
-            text-decoration: none;
-            color: black;
+        /*Gold button of product box*/
+        .forårsudsalg-btn{
+            background-color: #d4be7493;
+            font-weight: 400;
+            border: none;
+            border-radius: 6px;
+            position: relative;
+            top: -2rem;
         }
-        .socials img{
-            background-color: #fff;
-            padding: 5px ;
-            border-radius: 5px;
+        .heart img{
+            width: 25px !important;
+            height: 25px !important;
         }
+        .heart{
+            display: flex;
+            justify-content: end;
+        }
+        .heart:hover{
+            cursor: pointer;
+        }
+
+        .pro-discount{
+            display: flex;
+            justify-content: start;
+
+        }
+        #cutted-text{
+            text-decoration: line-through;
+            color: gray;
+        }
+        #red-text{
+            text-decoration: none !important;
+            color: #b41a18;
+        }
+        
+        
+        
     </style>
+
 </head>
 
 <body>
@@ -65,49 +94,63 @@
             <a href="">Reparationer</a>
         </div>
     </nav>
+
+    <!-- PAGE HEADING -->
     <div class="page-head">
-        <h4>FORSIDE / KONTAKT OS</h4>
+        <h4>FORSIDE / BUTIK / STRYGERE & BUER / BUER / VIOLINBUER</h4>
     </div>
+
     <main>
-        <div class="form-head">
-            <h2>Kontakt OS</h2>
-            <div class="form-desc">
-                Nam scelerisque odio.Suspendisse fermentum faucibus felis.Praesent pharetra. <br>
-                In consequat felis in tellus.In mi enim,rhoncus ullamcorper,sagittis at,placerat <br>
-                eget mauris.Suspendisse auctor erat at ipsum.Aliquam vitae tortor id massa tincidunt eleifend.
+        <div class="main-head">
+            <div class="main-heading">
+                Violinbuer
             </div>
-        </div>
-        <div class="form-cont">
-            <form action="">
-                <div class="form-row">
-                    <label for="fornavn" class="form-label">Fornavn
-                        <input type="text" name="fornavn" id="fornavn" class="form-control">
-                    </label>
-                    <label for="efternavn" class="form-label">Efternavn
-                        <input type="text" name="efternavn" id="efternavn" class="form-control">
-                    </label>
+            <div class="filter-options">
+                <div class="sort-filter">
+                    <img id="Sorter" src="./assests/glyphs/product overview sort downward arrow.svg" width="15px" alt="">
+                    <select name="Sorter" id="" class="filter-btn form-select">
+                        <option selected>Sorter &nbsp; </option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                    <div class="gold-line"></div>
+                    <img id="Filtrer" src="./assests/glyphs/product overview sort downward arrow.svg" width="15px" alt="">
+                    <select name="Filtrer" id="" class="filter-btn form-select">
+                        <option selected>Filtrer &nbsp; </option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
                 </div>
-                <div class="form-row">
-                    <label for="e_mailadresse" class="form-label">E-mailadresse
-                        <input type="text" id="e_mailadresse" class="form-control">
-                    </label>
-                    <label for="telefonnummer" class="form-label">Telefonnummer
-                        <input type="text" name="telefonnummer" id="telefonnummer" class="form-control">
-                    </label>
+                <div class="visning">
+                    <img id="visning" src="./assests/glyphs/product overview sort downward arrow.svg" width="15px" alt="">
+                    <select name="sort_by" id="" class="filter-btn form-select">
+                        <option selected>Vising &nbsp; </option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
                 </div>
-                <div class="form-row">
-                    <label for="henvendelse" class="form-label">Henvendelse
-                        <textarea name="henvendelse" id="henvendelse" class="form-control" cols="105" rows="10"></textarea>
-                    </label>
+            </div>
+            <div class="products-container">
+                
+            </div>
+            
+            <div class="pages">
+                <div class="button-line">
+                    <button class="btn px-3 numbered-button active">1</button>
+                    <button class="btn px-3 numbered-button">2</button>
+                    <button class="btn px-3 numbered-button">3</button>
+                    <button class="btn px-3 numbered-button">4</button>
+                    <button class="btn px-3 numbered-button">5</button>
+                    <button class="btn px-3 numbered-button">6</button>
+                    <button class="btn px-3 numbered-button">7</button>
                 </div>
-            </form>
-        </div>
-        <div class="form-foot">
-            Woodworks Musik benytter ovenstaende oplysniger til at <br>
-            svare pa din henvendelse hvorefter oplysningerne slettes.
-        </div>
-        <div class="form-btn">
-            <button class="besked-btn">Send Besked</button>
+            </div>
         </div>
     </main>
 
