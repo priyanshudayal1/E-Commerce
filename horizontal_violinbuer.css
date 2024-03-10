@@ -144,26 +144,12 @@
 
 /*PRoduct container*/
 .products-container {
-    margin: 2rem 5rem;
     padding: 2rem 8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     /* Adds two rows */
     gap: 80px;
-}
-
-.product {
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
-    text-align: center;
-    border: none;
-    height: 600px;
-}
-.product:hover{
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product img {
@@ -176,91 +162,30 @@
     margin-bottom: 10px;
 }
 
-
-
-
-
-.prod-desc{
-    margin-top: 2rem ;
-    display: flex !important;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
-#prod-name{
-    text-align: start;
-    font-size: 27px;
-}
-#prod-model{
-    text-align: start;
-    font-size: 15px;
-}
-#prod-model span{
-    color: #D4BE74;
-}
-.prod-price{
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    text-align: start;
-    font-size: 20px;
-}
-
 .color-lines {
-    margin: 0.7rem 40px;
+    width: fit-content;
     display: flex;
+    height: 50px;
     justify-content: center;
     gap: 7px ;
 }
 
 .color-lines img{
-    width: 12%;
-    height: 11%;
+    width: 12% !important;
+    height: 11% !important;
 }
 
 .line1:hover{
     transform: scale(140%);
+    cursor: pointer;
 }
 .line2:hover{
     transform: scale(140%);
+    cursor: pointer;
 }
 .line3:hover{
     transform: scale(140%);
-}
-
-
-/*Gold button of product box*/
-.forårsudsalg-btn{
-    background-color: #d4be7493;
-    font-weight: 400;
-    border: none;
-    border-radius: 6px;
-    position: relative;
-    top: -2rem;
-}
-.heart img{
-    width: 25px !important;
-    height: 25px !important;
-}
-.heart{
-    display: flex;
-    justify-content: end;
-}
-.heart:hover{
     cursor: pointer;
-}
-
-.pro-discount{
-    display: flex;
-    justify-content: start;
-
-}
-#cutted-text{
-    text-decoration: line-through;
-    color: gray;
-}
-#red-text{
-    text-decoration: none !important;
-    color: #b41a18;
 }
 
 
