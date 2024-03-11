@@ -1,0 +1,608 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+
+
+
+ /*NAVBAR*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 6rem !important;
+}
+
+.navbar {
+    background: url('./assests/navbar\ and\ header/nav-bar-bg.webp') center/cover no-repeat;
+    /* Other styles for your navigation bar */
+    /* Adjust the height as needed */
+    color: white;
+    /* Set the text color */
+}
+
+.nav-box {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.nav-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center ;
+    gap: 2rem;
+}
+
+#search-icon{
+    position: relative;
+    top: 5px !important;
+    left: 60px;
+    color: gray;
+    font-size: 20px;
+    z-index: 10;
+}
+
+
+
+
+/*Nav bar links*/
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0rem 6rem;
+}
+
+.nav-links a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.nav-links a:hover{
+    background-color: #dbd8d8;
+}
+
+.nav-search input {
+    height: 40px;
+    padding-left: 35px;
+    padding-right: 80px !important;
+    border-radius: 6px;
+    border: none;
+    position: relative;
+    top: 5px;
+
+}
+
+.nav-search button{
+    position: relative;
+    top: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+
+
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+.socials img{
+    background-color: #fff;
+    padding: 8px ;
+    border-radius: 5px;
+}
+
+.socials {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*MAIN HEADING*/
+.main-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 4rem;
+}
+
+
+
+/*PAGE HEAD*/
+.page-head{
+    width: 100%;
+    background-color: #171C24;
+    color: #F2F2F2;
+    color: white;
+    padding-left: 7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 20px !important;
+}
+
+
+/*Filter box*/
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #D4BE74;
+    margin-bottom: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding-bottom: 1rem ;
+}
+
+.cart-heading{
+    display: flex;
+    margin-top: 1rem 8rem;
+    font-size: 30px;
+    margin-left: 12rem;
+    margin-right: 15rem !important;
+}
+
+
+/*PRoduct container*/
+
+
+
+
+/*PRoduct Container*/
+.products-container{
+    margin: 2rem 0px;
+    padding: 20px;
+    margin: 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.product {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Three equal columns */
+    grid-gap: 10px;
+    border: none;
+    /* Adjust the gap between grid lines as needed */
+    border-bottom: 2px solid #d1d1d1 !important;
+    /* Set a background color for better visibility */
+    padding: 20px;
+    /* Add padding to the container */
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+    margin-left: 2rem;
+}
+
+.product:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prod-box1 {
+    display: flex;
+    flex-direction: column;
+    /* Set the color and thickness of the grid lines */
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    /* Set the height of the grid lines as needed */
+    /* You can add more styling based on your requirements */
+}
+
+.prod-box2 {
+    display: flex;
+    flex-direction: column;
+    /* Set the color and thickness of the grid lines */
+}
+.prod-box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    /* Set the color and thickness of the grid lines */
+    height: 300px;
+    text-align: end;
+}
+.prod-price{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    font-size: 20px;
+}
+#cutted-text{
+    text-decoration: line-through;
+    color: gray;
+}
+#red-text{
+    text-decoration: none !important;
+    color: #b41a18;
+}
+
+/*Gold button of product box*/
+.forårsudsalg-btn {
+    background-color: #D4BE74;
+    font-weight: 400;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    top: 0.8rem;
+    left: 34px;
+    z-index: 10;
+}
+.til-foresporgsel{
+    border: 2px solid #D4BE74 !important;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 40px;
+    font-size: 16px;
+}
+.til-vare-btn {
+    background-color: #D4BE74;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 50px;
+    font-size: 16px;
+
+}
+.prod-qty{
+    color: gray;
+    font-size: 18px;
+    margin: 2rem 0px !important;
+}
+.prod-rating{
+    font-size: 20px;
+    display: flex;
+    gap: 2rem;
+}
+.prod-desc{
+    display: flex !important;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+#prod-name{
+    text-align: start;
+    font-size: 30px;
+}
+#prod-model{
+    text-align: start;
+    font-size: 20px;
+}
+#prod-model span{
+    color: #D4BE74;
+}
+.edit-btns img:hover{
+    cursor: pointer;
+}
+.line{
+    width: 1px;
+    background-color: #333;
+}
+
+/*Cart bottom form and text*/
+.cart-content {
+    margin-bottom: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cart-price {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 20px !important;
+}
+
+.cart-price div {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#arrow-btn {
+    background-color: #fff;
+    padding: 2px 0px;
+    color: #717171;
+    border: none;
+}
+
+#arrow-btn img {
+    transform: rotate(180deg);
+
+}
+
+.logind-btns {
+    justify-content: center !important;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-form-container {
+    display: flex;
+    width: 50% !important;
+    align-items: center;
+    font-size: 16px;
+}
+
+.cart-form-container label {
+    font-weight: bolder;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.form-row input {
+    width: 380px;
+}
+
+.form-row input::placeholder {
+    color: #A86162;
+    text-align: end;
+}
+
+.big-input {
+    width: 500px !important;
+}
+
+.small-input {
+    width: 260px !important;
+}
+
+#gold-text {
+    color: #D4BE74;
+}
+
+.vertical-btns {
+    margin: 2rem 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.vertical-btns button {
+    font-size: 18px;
+}
+
+.logind-btns,
+.accept,
+.vertical-btns,
+.bottom-text {
+    font-size: 18px;
+}
+
+.bottom-text p {
+    text-align: center;
+}
+
+.drop_down_cont {
+    justify-content: center !important;
+    align-items: start !important;
+    font-size: 20px;
+
+}
+
+.drop_down {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.drop_down p {
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    text-align: start !important;
+    font-size: 22px;
+    align-items: center;
+}
+
+.flere-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    font-size: 20px;
+}
+
+.number-btn {
+    left: 65px;
+}
+
+.prod-img input {
+    width: 50px;
+    text-align: center;
+    background-color: #20242D;
+    color: #D4BE74 !important;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity-btn button {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #D4BE74;
+    border-radius: 6px;
+    background-color: #20242D;
+    border: none;
+}
+
+.quantity-btn {
+    display: flex;
+    width: fit-content;
+    background-color: #20242D;
+    border: none;
+    color: #D4BE74;
+    border-radius: 6px;
+    position: relative;
+    bottom: -296px;
+    left: 67px;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    width: 100vw;
+    height: 4rem;
+}
+
+.copyright {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    text-align: center;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+    /* Adjust the gap as needed */
+}
+
+
+
+/* Main footer section */
+.footer {
+    width: 100%;
+    max-width: 100vw;
+    /* Prevents horizontal overflow */
+    height: auto;
+    margin: 0;
+    /* Remove margin */
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.footer a svg path,
+.footer a svg rect,
+.footer a svg circle {
+    fill: black; /* Set the fill color to black */
+}
+
+.footer {
+    background: url('./assests/navbar\ and\ header/footbg.svg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    
+}
+
+
+
+/* Copyright section */
+.copyright {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.box1,
+.box2,
+.box3 {
+    border: 1px solid #ccc;
+    /* Add borders for visualization */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    justify-content: space-evenly;
+}
+
+/* footer box1 */
+
+.box1 p i{
+    color: #D4BE74;
+}
+
+/* footer box2 */
+.box2,
+.box1,
+.box3 h3 {
+    text-align: center;
+}
+
+.box1 h3 {
+    text-align: start;
+    padding: 2px 40px;
+}
+
+.box1,
+.box2 p {
+    font-size: 20px;
+}
+
+.box3,
+.box1 p {
+    text-align: start;
+    padding: 7px 40px;
+    font-size: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gold-text{
+    color: #D4BE74;
+}
+
+#email {
+    width: 15rem;
+}
+
+.telmeld-btn {
+    padding: 6px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    background-color: #D4BE74;
+    color: #1C1C1C;
+}
+
+.kontakt-btn{
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+
+
+

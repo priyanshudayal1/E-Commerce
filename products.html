@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forespørgsel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="products.css">
+    <style>
+        body {
+            margin: 0px 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 6rem !important;
+        }
+
+        .socials img {
+            height: 36px !important;
+            width: 36px !important;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-head">
+                <img src="./assests/main logo/wordmark logo.svg" width="100%" alt="">
+            </div>
+            <div class="nav-box">
+                <div class="nav-search">
+                    <div id="search-icon"><img src="./assests//glyphs/search magnifying glass.svg" width="20px"
+                            height="20px" alt=""></div>
+                    <input type="text" placeholder="Søg" class="form-control">
+                    <button class=" search-btn px-4 ">Kontakt</button>
+                    <div class="socials">
+                        <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook"></a>
+                        &nbsp;
+                        <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram"></a></a> &nbsp;
+                        <a href=""><img src="./assests//glyphs/google.svg" alt="google"></a></a> &nbsp;
+                        <a href=""><img src="./assests//glyphs/linkedin.svg" alt="linkedin"></a></a> &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="">Strenge</a>
+            <a href="">Strygere</a>
+            <a href="">Guitarer & Folk</a>
+            <a href="">Tilbehor</a>
+            <a href="">Materialer</a>
+            <a href="">Vaerktoj</a>
+            <a href="">Reparationer</a>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADING -->
+    <div class="page-head">
+        <span>
+            <img src="./assests/breadcrumb back left arrow (STIXGeneral).svg" width="50px" alt="">
+            TILBAGE TIL VIOLINSTRENGE
+        </span>
+    </div>
+
+    <main>
+        <div class="main-head">
+            <div class="main-heading">
+                Forespørgsel &nbsp; <img src="./assests/glyphs/encircled question mark .svg" width="30px" alt="">
+            </div>
+            <div class="filter-options">
+            </div>
+
+            <!-- Products Container -->
+            <div class="products-container">
+                <div class="product">
+                    <div class="prod-box1">
+                        <div class="prod-img">
+                            <div class="quantity-btn">
+                                <button onclick="decrementQuantity()">-</button>
+                                <input type="text" id="quantity" value="1" readonly>
+                                <button onclick="incrementQuantity()">+</button>
+                            </div>
+                            <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button> <br>
+
+                            <img src="./assests/product assets/product item 9 strings.webp" width="250px" alt="">
+                        </div>
+                        <div class="prod-qty">
+                            1 x varenummer 120371242
+                        </div>
+                    </div>
+                    <div class="prod-box2">
+                        <div class="prod-desc">
+                            <span id="prod-name">Alphayue AL100</span>
+                            <span id="prod-model">fra <span>Thomastik</span></span>
+                        </div>
+                        <div class="prod-rating">
+                            <p>
+                                Størrelse: 4/4 <br>
+                                Spaending: medium <br>
+                                Tilpasset a-streng <img src="./assests/glyphs/encircled question mark .svg" width="15px"
+                                    alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prod-box3">
+                        <div class="edit-btns">
+                            <div class="close">
+                                <img src="./assests/glyphs/cart item remove X.svg" width="40px" alt="">
+                            </div>
+                            <div class="edit">
+                                <img src="./assests/glyphs/cart item edit pencil.svg" width="40px" alt="">
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="pro-discount">
+                                <span id="cutted-text">209,95 kr. </span> <span id="red-text">&nbsp; (-16%)</span>
+                            </span>
+                            <div class="prod-price">
+                                175,95 kr.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="prod-box1">
+                        <div class="prod-img">
+                            <div class="quantity-btn">
+                                <button onclick="decrementQuantity()">-</button>
+                                <input type="text" id="quantity" value="2" readonly>
+                                <button onclick="incrementQuantity()">+</button>
+                            </div>
+                            <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button> <br>
+
+                            <img src="./assests/product assets/product item 11 strings.webp" width="250px" alt="">
+                        </div>
+                        <div class="prod-qty">
+                            2 x varenummer 120391242
+                        </div>
+                    </div>
+                    <div class="prod-box2">
+                        <div class="prod-desc">
+                            <span id="prod-name">Infield IR100</span>
+                            <span id="prod-model">fra <span>Thomastik</span></span>
+                        </div>
+                        <div class="prod-rating">
+                            <p>
+                                Størrelse: 4/4 <br>
+                                Spaending: medium <br>
+                                Forankring: løkke
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prod-box3">
+                        <div class="edit-btns">
+                            <div class="close">
+                                <img src="./assests/glyphs/cart item remove X.svg" width="40px" alt="">
+                            </div>
+                            <div class="edit">
+                                <img src="./assests/glyphs/cart item edit pencil.svg" width="40px" alt="">
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="pro-discount">
+                                <span id="cutted-text">900,00 kr. </span> <span id="red-text">&nbsp; (-50%)</span>
+                            </span>
+                            <div class="prod-price">
+                                450,00 kr.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="prod-box1">
+                        <div class="prod-img">
+                            <div class="quantity-btn">
+                                <button onclick="decrementQuantity()">-</button>
+                                <input type="text" id="quantity" value="2" readonly>
+                                <button onclick="incrementQuantity()">+</button>
+                            </div>
+                            <button class=" px-5 py-1 forårsudsalg-btn number-btn">3+1</button> <br>
+
+                            <img src="./assests/product assets/product item 10 strings.webp" width="250px" alt="">
+                        </div>
+                        <div class="prod-qty">
+                            2 x varenummer 120371242
+                        </div>
+                    </div>
+                    <div class="prod-box2">
+                        <div class="prod-desc">
+                            <span id="prod-name">Alphayue AL400</span>
+                            <span id="prod-model">fra <span>Thomastik</span></span>
+                        </div>
+                        <div class="prod-rating">
+                            <p>
+                                Størrelse: 4/4 <br>
+                                Spaending: medium <br>
+                                Tilpasset a-streng <img src="./assests/glyphs/encircled question mark .svg" width="15px"
+                                    alt=""> <br>
+                                Tilpasset a-streng <img src="./assests/glyphs/encircled question mark .svg" width="15px"
+                                    alt="">
+                            </p>
+                            <div class="line">
+
+                            </div>
+                            <p>Tilpasset a-streng <img src="./assests/glyphs/encircled question mark .svg" width="15px"
+                                    alt=""> <br>
+                                Tilpasset a-streng <img src="./assests/glyphs/encircled question mark .svg" width="15px"
+                                    alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prod-box3">
+                        <div class="edit-btns">
+                            <div class="close">
+                                <img src="./assests/glyphs/cart item remove X.svg" width="40px" alt="">
+                            </div>
+                            <div class="edit">
+                                <img src="./assests/glyphs/cart item edit pencil.svg" width="40px" alt="">
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="prod-price">
+                                1.830,00 kr.
+                            </div>
+                            <span class="pro-discount">
+                                <span id="cutted-text"></span> <span id="red-text">2 stk. fra at opna
+                                    maengderabat</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CART HEADING AND CONTENT -->
+            <div class="cart-heading filter-options">
+                <span>Opgørelse</span>
+            </div>
+            <div class="cart-content">
+                <div class="cart-price">
+                    <div>
+                        <span>
+                            4 varer
+                        </span>
+                        <span>
+                            2939,95 kr.
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            Rabat i alt
+                        </span>
+                        <span id="red-text">- 484,00 kr.</span>
+                    </div>
+                    <div>
+                        <span>
+                            <b>
+                                Forelobig opgorelse (inkl. moms)
+                            </b>
+                        </span>
+                        <span>
+                            2455,95 kr.
+                        </span>
+                    </div>
+                    <div class="cart-line mb-6">
+                        Eventuel fragt tillaegges nar orden er bekraeftet.
+                    </div>
+                    <div class="cart-textarea">
+                        <label for="cart-text">Spørgsmal eller kommentar <br>
+                            <textarea name="cart-text" id="cart-text" cols="100" rows="7"
+                                class="form-control"></textarea>
+                        </label>
+                    </div>
+                    <div class="arrow-btn">
+                        <div>
+                        </div>
+                        <button id="arrow-btn" class="">Ring eller send en besked i stedet &nbsp; <img
+                                src="./assests/breadcrumb back left arrow (STIXGeneral).svg"
+                                style="filter: invert(100%);" width="30px" alt=""></button>
+                    </div>
+                    <div class="logind-btns">
+                        <button id="arrow-btn" class=""><b>Log ind</b> &nbsp; <img
+                                src="./assests/breadcrumb back left arrow (STIXGeneral).svg"
+                                style="filter: invert(100%);" width="30px" alt=""></button>
+                        <div class="line"></div>
+                        <button id="arrow-btn" class=""> <b> Opret bruger</b> &nbsp; <img
+                                src="./assests/breadcrumb back left arrow (STIXGeneral).svg"
+                                style="filter: invert(100%);" width="30px" alt=""></button>
+                    </div>
+                </div>
+                <div class="cart-form-container">
+                    <form action="">
+                        <div class="form-row">
+                            <label for="Fornavn" class="form-label">Fornavn
+                                <input type="text" id="Fornavn" class="form-control" placeholder="påkrævet" required>
+                            </label>
+                            <label for="Efternavn" class="form-label">Efternavn
+                                <input type="text" id="Efternavn" class="form-control" placeholder="påkrævet" required>
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <label for="E-mailadresse" class="form-label">E-mailadresse
+                                <input type="text" id="E-mailadresse" class="form-control" placeholder="påkrævet"
+                                    required>
+                            </label>
+                            <label for="Telefonnummer" class="form-label">Telefonnummer
+                                <input type="text" id="Telefonnummer" class="form-control">
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <label for="Gadenavn" class="form-label">Gadenavn
+                                <input type="text" id="Gadenavn" class="form-control big-input" placeholder="påkrævet"
+                                    required>
+                            </label>
+                            <label for="Husnummer" class="form-label">Husnummer
+                                <input type="text" id="Husnummer" class="form-control small-input"
+                                    placeholder="påkrævet" required>
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <label for="Postnummer" class="form-label">Postnummer
+                                <input type="text" id="Postnummer" class="form-control small-input"
+                                    placeholder="påkrævet" required>
+                            </label>
+                            <label for="By" class="form-label">By
+                                <input type="text" id="By" class="form-control big-input" placeholder="påkrævet"
+                                    required>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="cart-price">
+                    ønskes levering til samme adresse?
+                </div>
+                <div class="logind-btns">
+                    <button id="arrow-btn" class=""><span id="gold-text">Ja</span></button>
+                    <div class="line"></div>
+                    <button id="arrow-btn" class="">Nej</button>
+                </div>
+                <div class="accept">
+                    <input type="checkbox" id="accept" name="accept"> &nbsp; Jeg accepterer <span
+                        id="gold-text">handelsbetingelserne</span>.
+                </div>
+                <div class="vertical-btns">
+                    <button class="til-vare-btn">Send forespørgsel</button>
+                    <button class="til-foresporgsel">Flyt til ønsker &nbsp; <img
+                            src="./assests/glyphs/move to favorites arrow into heart.svg" width="25px" alt=""></button>
+                </div>
+                <div class="bottom-text">
+                    <p>
+                        Vi tilbyder ikke betaling via vores hjemmeside pa nuvaerende <br>
+                        tidspunkt.Venligst <span id="gold-text">send en foresporsel</span> eller <span
+                            id="gold-text">kom forbi</span> <br>
+                        <span id="gold-text">butikken</span> for at foretage en bestilling.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cart-heading filter-options">
+                <span>Spørgsmal til bestilling</span>
+            </div>
+            <div class="cart-content drop_down_cont">
+                <div class="drop_down">
+                    <p>Hvad er en forespørgsel? &nbsp; <img src="./assests/glyphs/product page unfold arrow.svg"
+                            width="20px" alt=""></p>
+
+                </div>
+                <div class="drop_down">
+                    <p>Hvorfor ingen forskudsbetaling? &nbsp; <img src="./assests/glyphs/product page unfold arrow.svg"
+                            width="20px" alt=""></p>
+                </div>
+                <div class="drop_down">
+                    <p>Hvordan betaler jeg? &nbsp; <img src="./assests/glyphs/product page unfold arrow.svg"
+                            width="20px" alt=""></p>
+                </div>
+                <div class="drop_down">
+                    <p>Hvad koster fragt? &nbsp; <img src="./assests/glyphs/product page unfold arrow.svg" width="20px"
+                            alt=""></p>
+                </div>
+                <div class="drop_down">
+                    <p>Hvad sker der efter jeg har sendt en forespørgsel? &nbsp; <img
+                            src="./assests/glyphs/product page unfold arrow.svg" width="20px" alt=""></p>
+                </div>
+            </div>
+            <div class="flere-btn">
+                <button id="arrow-btn">Flere generelle spørgsmal &nbsp; <img
+                        src="./assests/breadcrumb back left arrow (STIXGeneral).svg" width="30px"
+                        style="transform: rotate(180deg); filter: invert(100%);" alt=""></button>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="box1">
+                <h3>Woodworks Musik <br>
+                    Butik og vaertsted</h3>
+                <p></p>
+                <p>Butik og vaerksted med speciale i akustiske strengeinstrumenter.</p>
+                <p>Salge,service og reparation.</p>
+                <p>Du er altid (24/7) velkommen til at kontake os.</p>
+                <p>
+                    <img src="./assests/glyphs/location pin.svg" width="20px" alt=""> &nbsp; Nygade 24(1.sal i garden),
+                    8600 Silkeborg
+                </p>
+                <p>
+                    <img src="./assests/glyphs/globe.svg" width="20px" alt=""> &nbsp; Denmark
+                </p>
+                <p>
+                    <img src="./assests/glyphs/phone copy.svg" width="20px" alt=""> &nbsp; +45 40 18 01 43
+                </p>
+                <p>
+                    <img src="./assests/glyphs/email.svg" width="20px" alt=""> &nbsp; info@woodworks.dk
+                </p>
+                <p>
+                    <img src="./assests/glyphs/CVR.svg" width="20px" alt=""> &nbsp; 40 95 16 95
+                </p>
+                <p>
+                    Abningstider:
+                    Hverdage: 10 - 17
+                    Weekends: Lukket
+                    Ellers efter aftale.
+                </p>
+            </div>
+            <div class="box2">
+                <h3>
+                    Tilmeld dig vores <br>
+                    nyhedsbrev
+                </h3>
+                <p class="email">
+                    <input type="text" placeholder="E-mail" required class="form-control" id="email">
+                    <button class="telmeld-btn">Tilmeld</button>
+                </p>
+                <p>
+                    Nyhedsbrevet udkommer ca. 4 gange <br>
+                    om aret. Du kan altid <span class="gold-text">afmelde</span> det igen.
+                </p>
+                <h4>
+                    Brug for hjaelp?
+                </h4>
+                <p>
+                    <button class="btn btn-light px-4 border-black py-2 fs-5 kontakt-btn">Kontakt</button>
+                </p>
+                <h3>Følg os</h3>
+                <div class="socials">
+                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a>
+                    &nbsp;
+                    <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/google.svg" alt="google" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/linkedin.svg" alt="linkedin" width="40px"></a></a> &nbsp;
+                </div>
+            </div>
+            <div class="box3">
+                <h3>Information</h3>
+                <p>
+                    Om Woodworks Musik <br>
+                    Kontakt os <br>
+                    Abningstider <br>
+                    Find os <br>
+                    kig ind i butik og vaerksted
+                </p>
+                <p>
+                    Sadan handler du hos os <br>
+                    Almindelige sporgsmal <br>
+                    Handelsbetingelser <br>
+                    Persondatapolitik <br>
+                    Kundeservice
+                </p>
+                <p>Nyttige links</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Woodworks Musik / Oxlund Design & Udvikling </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        function incrementQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentQuantity = parseInt(quantityInput.value, 10);
+            quantityInput.value = currentQuantity + 1;
+        }
+
+        function decrementQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentQuantity = parseInt(quantityInput.value, 10);
+
+            // Ensure the quantity doesn't go below 1
+            if (currentQuantity > 1) {
+                quantityInput.value = currentQuantity - 1;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
