@@ -36,12 +36,12 @@
 
 #search-icon{
     position: relative;
-    top: 9px;
+    top: 5px !important;
     left: 60px;
     color: gray;
     font-size: 20px;
+    z-index: 10;
 }
-
 .nav-search input {
     padding-left: 35px;
     padding-right: 80px !important;

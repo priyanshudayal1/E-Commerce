@@ -32,21 +32,20 @@
 .nav-search {
     display: flex;
     flex-direction: row;
+    justify-content: center !important;
+    align-items: center ;
     gap: 2rem;
 }
 
 #search-icon{
     position: relative;
-    top: 9px;
+    top: 5px !important;
     left: 60px;
     color: gray;
     font-size: 20px;
+    z-index: 10;
 }
 
-.nav-search input {
-    padding-left: 35px;
-    padding-right: 80px !important;
-}
 
 
 
@@ -69,6 +68,25 @@
     background-color: #dbd8d8;
 }
 
+.nav-search input {
+    height: 40px;
+    padding-left: 35px;
+    padding-right: 80px !important;
+    border-radius: 6px;
+    border: none;
+    position: relative;
+    top: 5px;
+
+}
+
+.nav-search button{
+    position: relative;
+    top: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+
 
 .socials a{
     text-decoration: none;
@@ -76,9 +94,16 @@
 }
 .socials img{
     background-color: #fff;
-    padding: 5px ;
+    padding: 8px ;
     border-radius: 5px;
 }
+
+.socials {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
 
 /*MAIN HEADING*/
 .main-heading {
@@ -171,8 +196,8 @@
 }
 
 .color-lines img{
-    width: 12% !important;
-    height: 11% !important;
+    width: 5.5% !important;
+    height: 9% !important;
 }
 
 .line1:hover{
@@ -186,6 +211,152 @@
 .line3:hover{
     transform: scale(140%);
     cursor: pointer;
+}
+
+/*PRoduct Container*/
+
+
+.prod-img img {
+    max-width: 80% !important;
+    /* Ensure the image doesn't exceed the container width */
+    height: 150px !important;
+    object-fit: contain;
+    object-position: center center;
+    /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column */
+    gap: 3rem;
+    /* Adjust the gap between items */
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    height: 360px;
+    display: flex;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+    border: none;
+}
+
+.product:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prod-img,
+.prod-desc,
+.prod-price {
+    width: 100%;
+}
+
+.prod-desc {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.prod-desc p {
+    text-align: start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 17px;
+    color: #232323;
+}
+
+#prod-name {
+    text-align: start;
+    font-size: 27px;
+}
+
+#prod-model {
+    text-align: start;
+    font-size: 15px;
+}
+
+#prod-model span {
+    color: #D4BE74;
+}
+
+.heart img {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.heart {
+    display: flex;
+    justify-content: end;
+}
+
+.heart:hover {
+    cursor: pointer;
+}
+
+.til-vare-btn button {
+    background-color: #D4BE74;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 80px;
+    font-size: 16px;
+
+}
+
+.til-foresporgsel button {
+    border: 1px solid #D4BE74 !important;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 50px;
+    font-size: 16px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*Gold button of product box*/
+.forårsudsalg-btn {
+    background-color: #d4be7493;
+    font-weight: 400;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    top: 0.2rem;
+}
+
+.pro-discount {
+    display: flex;
+    justify-content: center;
+
+}
+
+#cutted-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#red-text {
+    text-decoration: none !important;
+    color: #b41a18;
+}
+.til-foresporgsel{
+    font-size: 20px;
+    color: gray;
 }
 
 
@@ -354,12 +525,6 @@
     color: #000000;
 }
 
-.socials {
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    gap: 0.4rem;
-}
 
 
 
