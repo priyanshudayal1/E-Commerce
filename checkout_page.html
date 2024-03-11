@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="checkout_page.css">
+    <style>
+        body {
+            margin: 0px 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 6rem !important;
+        }
+
+        .nav-search input {
+            height: 40px;
+            padding-left: 35px;
+            padding-right: 80px !important;
+            border-radius: 6px;
+            border: none;
+            position: relative;
+            top: 5px;
+
+        }
+
+        .nav-search button {
+            position: relative;
+            top: 5px;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+        }
+
+
+        .socials a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .socials img {
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .socials {
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .socials img {
+            height: 36px !important;
+            width: 36px !important;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-head">
+                <img src="./assests/main logo/wordmark logo.svg" width="100%" alt="">
+            </div>
+            <div class="nav-box">
+                <div class="nav-search">
+                    <div id="search-icon"><img src="./assests//glyphs/search magnifying glass.svg" width="20px"
+                            height="20px" alt=""></div>
+                    <input type="text" placeholder="Søg" class="form-control">
+                    <button class=" search-btn px-4 ">Kontakt</button>
+                    <div class="socials">
+                        <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook"></a>
+                        &nbsp;
+                        <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram"></a></a> &nbsp;
+                        <a href=""><img src="./assests//glyphs/google.svg" alt="google"></a></a> &nbsp;
+                        <a href=""><img src="./assests//glyphs/linkedin.svg" alt="linkedin"></a></a> &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="">Strenge</a>
+            <a href="">Strygere</a>
+            <a href="">Guitarer & Folk</a>
+            <a href="">Tilbehor</a>
+            <a href="">Materialer</a>
+            <a href="">Vaerktoj</a>
+            <a href="">Reparationer</a>
+        </div>
+    </nav>
+    <div class="page-head">
+        <h4>FORSIDE / BUTIK STRENGE / VIOLINSTRENGE / ALPHAYUE AL100</h4>
+    </div>
+    <main>
+        <div class="prod-cont">
+            <div class="prod-img">
+                <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button> <br>
+                <div class="prod-img-cont">
+                    <img src="./assests/product assets/product item 9 strings.webp" width="500px" alt="">
+                </div>
+                <div class="color-lines">
+                    <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg"
+                        alt="color_option">
+                    <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg"
+                        alt="color_option">
+                    <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg"
+                        alt="color_option">
+                    <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg"
+                        alt="color_option">
+                </div>
+                <div class="description">
+                    <p>
+                        In facilisis sodales arcu.Mauris tincidunt.Class aptent <br>
+                        taciti sociosqu ad litora torquent per conubia nostra,per <br>
+                        inceptos hymenaeos.
+                    </p>
+                    <p>
+                        liquam dapibus ipsum vitae sem.Ut eget mauris ac nunc <br>
+                        luctus ornare.Phasellus enim augue,rutrum tempus, <br>
+                        blandit in,vehicula eu,neque.Sed consequat nunc.
+                    </p>
+                </div>
+                <div class="cart-content drop_down_cont">
+                    <div class="drop_down">
+                        Detaljer &nbsp; <img src="./assests/glyphs/product page unfold arrow.svg" width="20px" alt="">
+
+                    </div>
+                    <div class="drop_down">
+                        Vejledning &nbsp; <img src="./assests/glyphs/product page unfold arrow.svg" width="20px" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="prod-details">
+                <div>
+                    <div class="prod-desc">
+                        <span id="prod-name">Alphayue AL100 </span>
+                        <span id="prod-model">fra <span>Thomastik</span></span>
+                    </div>
+                    <span class="pro-discount">
+                        <span id="cutted-text">209,95 kr. </span> <span id="red-text">&nbsp; (-16%)</span>
+                    </span>
+                    <div class="prod-price">
+                        175,95 kr.
+                    </div>
+                </div>
+                <div class="btns-cont">
+                    <div class="btns">
+                        <div class="til-vare-btn">
+                            <button class="">Gå til vare</button>
+                        </div>
+                        <div class="til-foresporgsel">
+                            <button class="">Føj til forespørgsel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="size">
+                    <div class="size-head">
+                        Størrelse
+                    </div>
+                    <div class="sizes">
+                        <span class="active">4/4</span>
+                        <span>3/4</span>
+                        <span>1/2</span>
+                        <span>1/4</span>
+                        <span>1/8</span>
+                        <span>1/16</span>
+                    </div>
+                </div>
+                <div class="size">
+                    <div class="size-head">
+                        Spaending
+                    </div>
+                    <div class="size-btn">
+                        <button class="">medium &nbsp; <img src="./assests/glyphs/product page unfold arrow.svg"
+                                width="18px" alt=""></button>
+                    </div>
+                </div>
+                <span id="tilpas-head">Tilpas enkeltstrenge</span>
+                <div class="tilpas-box">
+                    <div class="tilpas-btns">
+
+                        <button class="active">E</button>
+                        <button>A</button>
+                        <button>D</button>
+                        <button class="disabled">G</button>
+                    </div>
+                    <div class="forankring">
+                        <div class="forankring-head">
+                            Forankring
+                        </div>
+                        <div class="forankring-options">
+                            <span class="active">kugle</span>
+                            <span>lokke</span>
+                            <span>aftagelig kugle</span>
+                        </div>
+                    </div>
+                    <div class="ankermateriale">
+                        <div class="ankermateriale-head">
+                            Ankermateriale
+                        </div>
+                        <div class="size-btn ankermateriale-btn">
+                            <span id="down-arrow"><img src="./assests/glyphs/product page unfold arrow.svg" width="18px"
+                                    alt=""></span>
+                            <select class="form-control">
+                                <option selected>aluminium</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="kernemateriale">
+                        <div class="kernemateriale-head">
+                            Kernemateriale
+                        </div>
+                        <div class="size-btn kernemateriale-btn">
+                            <span id="down-arrow"><img src="./assests/glyphs/product page unfold arrow.svg" width="18px"
+                                    alt=""></span>
+                            <select class="form-control">
+                                <option selected>syntetisk</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ydermateriale">
+                        <div class="ydermateriale-head">
+                            Ydermateriale
+                        </div>
+                        <div class="size-btn ydermateriale-btn">
+                            <span id="down-arrow"><img src="./assests/glyphs/product page unfold arrow.svg" width="18px"
+                                    alt=""></span>
+                            <select class="form-control">
+                                <option selected>tin-belaegning</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-prod-container">
+            <div class="container-head filter-options">
+                Anbefalede varer
+            </div>
+            <div class="container-row">
+                <div class="product-box">
+                    <div class="prod-img">
+                        <img src="./assests/product assets/product item 10 strings.webp" width="55%" alt="">
+                    </div>
+                    <div class="color-lines">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg"
+                            alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg"
+                            alt="color_option">
+                    </div>
+                    <div class="prod-details">
+                        <div class="prod-desc">
+                            <span id="prod-name">Alphayue AL400</span>
+                            <span id="prod-model">fra <span>Thomastik</span></span>
+                        </div>
+                        <div class="prod-price">
+                            915,00 kr.
+                        </div>
+                    </div>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg"
+                        alt=""></span>
+                </div>
+
+                <div class="product-box">
+                    <div class="prod-img">
+                        <img src="./assests/product assets/product item 11 strings.webp" width="55%" alt="">
+                    </div>
+                    <div class="color-lines">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg"
+                            alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg"
+                            alt="color_option">
+                    </div>
+                    <div class="prod-details">
+                        <div class="prod-desc">
+                            <span id="prod-name">Infield IR100</span>
+                            <span id="prod-model">fra <span>Thomastik</span></span>
+                        </div>
+                        <div class="prod-price">
+                            Fra 450,00 kr.
+                        </div>
+                    </div>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg"
+                        alt=""></span>
+                </div>
+
+                <div class="product-box">
+                    <button class=" px-5 py-1 forårsudsalg-btn">Forårsudsalg</button>
+                    <div class="prod-img">
+
+                        <img src="./assests/product assets/product item 8 strings.webp" width="55%" alt="">
+                    </div>
+                    <div class="color-lines">
+                        <img class="line1" src="./assests/glyphs/product page image selector dash selected.svg"
+                            alt="color_option">
+                        <img class="line2" src="./assests/glyphs/product page image selector dash unselected.svg"
+                            alt="color_option">
+                    </div>
+                    <div class="prod-details">
+                        <div class="prod-desc">
+                            <span id="prod-name">Dominant Violin</span>
+                            <span id="prod-model">fra <span>Thomastik</span></span>
+                        </div>
+                        <span class="pro-discount">
+                            <span id="cutted-text">500,00 kr. </span> <span id="red-text">&nbsp; (-20%)</span>
+                        </span>
+                        <div class="prod-price">
+                            400,00 kr.
+                        </div>
+                    </div>
+                    <span class="heart"><img src="./assests/glyphs/product page heart gold unselected.svg"
+                            alt=""></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pages">
+            <span>
+                <img src="./assests/glyphs/left arrow enabled.svg" width="15px" alt="">
+                <p>1 - 3 ud af 16 varer</p>
+                <img src="./assests/glyphs/right arrow enabled.svg" width="15px" alt="">
+            </span>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="box1">
+                <h3>Woodworks Musik <br>
+                    Butik og vaertsted</h3>
+                <p></p>
+                <p>Butik og vaerksted med speciale i akustiske strengeinstrumenter.</p>
+                <p>Salge,service og reparation.</p>
+                <p>Du er altid (24/7) velkommen til at kontake os.</p>
+                <p>
+                    <img src="./assests/glyphs/location pin.svg" width="20px" alt=""> &nbsp; Nygade 24(1.sal i garden),
+                    8600 Silkeborg
+                </p>
+                <p>
+                    <img src="./assests/glyphs/globe.svg" width="20px" alt=""> &nbsp; Denmark
+                </p>
+                <p>
+                    <img src="./assests/glyphs/phone copy.svg" width="20px" alt=""> &nbsp; +45 40 18 01 43
+                </p>
+                <p>
+                    <img src="./assests/glyphs/email.svg" width="20px" alt=""> &nbsp; info@woodworks.dk
+                </p>
+                <p>
+                    <img src="./assests/glyphs/CVR.svg" width="20px" alt=""> &nbsp; 40 95 16 95
+                </p>
+                <p>
+                    Abningstider:
+                    Hverdage: 10 - 17
+                    Weekends: Lukket
+                    Ellers efter aftale.
+                </p>
+            </div>
+            <div class="box2">
+                <h3>
+                    Tilmeld dig vores <br>
+                    nyhedsbrev
+                </h3>
+                <p class="email">
+                    <input type="text" placeholder="E-mail" required class="form-control" id="email">
+                    <button class="telmeld-btn">Tilmeld</button>
+                </p>
+                <p>
+                    Nyhedsbrevet udkommer ca. 4 gange <br>
+                    om aret. Du kan altid <span class="gold-text">afmelde</span> det igen.
+                </p>
+                <h4>
+                    Brug for hjaelp?
+                </h4>
+                <p>
+                    <button class="btn btn-light px-4 border-black py-2 fs-5 kontakt-btn">Kontakt</button>
+                </p>
+                <h3>Følg os</h3>
+                <div class="socials">
+                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a>
+                    &nbsp;
+                    <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/google.svg" alt="google" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/linkedin.svg" alt="linkedin" width="40px"></a></a> &nbsp;
+                </div>
+            </div>
+            <div class="box3">
+                <h3>Information</h3>
+                <p>
+                    Om Woodworks Musik <br>
+                    Kontakt os <br>
+                    Abningstider <br>
+                    Find os <br>
+                    kig ind i butik og vaerksted
+                </p>
+                <p>
+                    Sadan handler du hos os <br>
+                    Almindelige sporgsmal <br>
+                    Handelsbetingelser <br>
+                    Persondatapolitik <br>
+                    Kundeservice
+                </p>
+                <p>Nyttige links</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Woodworks Musik / Oxlund Design & Udvikling </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
