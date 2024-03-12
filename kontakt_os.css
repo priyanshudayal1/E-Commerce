@@ -29,6 +29,12 @@
     gap: 6rem;
 }
 
+.form-cont input::placeholder {
+    color: #A86162;
+    text-align: end;
+}
+
+
 .nav-search {
     display: flex;
     flex-direction: row;
@@ -277,4 +283,11 @@ form label{
 .form-desc{
     font-size: 20px;
     text-align: center;
+}
+
+
+.box3 p{
+    text-align: start;
+    padding: 7px 120px;
+    font-size: 20px;   
 }

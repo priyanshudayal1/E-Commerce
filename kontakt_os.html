@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="kontakt_os.css">
     <style>
         body {
-            margin: 0px 2rem;
+            margin: 0px 2rem !important;
         }
 
         .navbar {
@@ -31,42 +31,211 @@
             border: none;
             position: relative;
             top: 5px;
-        
+
         }
-        
-        .nav-search button{
+
+        .nav-search button {
             position: relative;
             top: 5px;
             height: 40px;
             border: none;
             border-radius: 6px;
         }
-        
-        
-        .socials a{
+
+
+        .socials a {
             text-decoration: none;
             color: black;
         }
-        .socials img{
+
+        .socials img {
             background-color: #fff;
-            padding: 8px ;
+            padding: 8px;
             border-radius: 5px;
         }
-        
+
         .socials {
             font-size: 32px;
             display: flex;
             justify-content: center;
         }
-        .socials img{
-            height:36px !important;
-            width:36px !important;
+
+        .socials img {
+            height: 36px !important;
+            width: 36px !important;
         }
-        .socials{
+
+        .socials {
             display: flex;
             align-items: center !important;
             justify-content: center !important;
         }
+
+        /*Mega menu*/
+        .nav-boxes {
+            position: relative;
+        }
+
+        .nav-link-box {
+            position: absolute;
+            background-color: #fff;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-link-head {
+            width: 30%;
+            background-color: #232A34;
+        }
+
+        .nav-link-content {
+            width: 70%;
+            background-color: #FFFFFF;
+        }
+
+        .head-top {
+            margin: 2rem 8rem;
+            padding-bottom: 1.1rem;
+            font-size: 20px;
+            color: #D4BE74;
+            ;
+            border-bottom: 2px solid gray;
+        }
+
+        .head-mid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 2rem 8rem;
+            padding-bottom: 1.1rem;
+            border-bottom: 2px solid gray;
+            color: white;
+            font-size: 20px;
+        }
+
+        .head-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 2rem 8rem;
+            padding-bottom: 1.1rem;
+            color: white;
+            font-size: 20px;
+        }
+
+        .nav-link-content1 {
+            background: url('./assests/hero/hero-img3.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-box {
+            width: 70%;
+            height: 70%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-items: center;
+
+        }
+
+        .content-box-head {
+            width: 100%;
+            height: 30%;
+            text-align: center;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-box-prod-row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            width: 100%;
+            height: 100%;
+        }
+        .content-prod{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            flex-direction: column;
+            border-right: 1px solid gray;
+            padding-right: 20px;
+        }
+
+
+        /*2nd nav link*/
+        .nav-link-content2 {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .content-box2{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        .content-box2-box1{
+            width: 70%;
+            padding: 20px;
+            height: 100%;
+        }
+        .content-box2-box1-head{
+            display: flex;
+            font-size: 20px !important;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+            padding: 1rem;
+        }
+        .content-box2-box1-head button{
+            border: none;
+            padding: 5px 2rem ;
+            background-color: #fff;
+            border-radius: 10px;
+
+        }
+        .content-box1-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap !important;
+            justify-content: space-evenly;
+            gap: 14rem !important;
+        }
+        
+
+
+        .content-box2-box2{
+            width: 40%;
+            margin: 2rem 3rem !important;
+        }
+
+
+        .content-box2-box2-content a{
+            text-decoration: none;
+            color: black;
+        }
+        .content-box2-box2-content{
+            display: flex;
+            flex-direction: column !important;
+            gap: 1.5rem;
+            padding-left: 40px;
+            font-size: 20px !important;
+            margin-top: 2rem;
+        }
+
+        
     </style>
 </head>
 
@@ -102,6 +271,147 @@
             <a href="">Reparationer</a>
         </div>
     </nav>
+    <!-- <div class="nav-boxes">
+        <div class="nav-link-box">
+            <div class="nav-link-head">
+                <div class="head-top">
+                    <span id="gold-text">Nyheder</span>
+                </div>
+                <div class="head-mid">
+                    <span>Bratsch-&Violastrenge</span>
+                    <span>Violinstrenge</span>
+                    <span>Cellostrenge</span>
+                    <span>Kontrabasstrenge</span>
+                </div>
+                <div class="head-bottom">
+                    <span>Guitar-& Folk strenge</span>
+                    <span>Andre strenge</span>
+                </div>
+            </div>
+            <div class="nav-link-content1">
+                <div class="content-box">
+                    <div class="content-box-head">
+                        Tre nyheder fra Thomastik-Infield
+                    </div>
+                    <div class="content-box-prod-row">
+                        <div class="content-prod">
+                            <div class="content-prod-img">
+                                <img src="./assests/product assets/product item 9 strings.webp" width="170px" alt="">
+                            </div>
+                            <div class="cont-prod-name">
+                                RONDO
+                            </div>
+                        </div>
+                        <div class="content-prod">
+                            <div class="content-prod-img">
+                                <img src="./assests/product assets/product item 9 strings.webp" width="170px" alt="">
+                            </div>
+                            <div class="cont-prod-name">
+                                RONDO
+                            </div>
+                        </div>
+                        <div class="content-prod">
+                            <div class="content-prod-img">
+                                <img src="./assests/product assets/product item 9 strings.webp" width="170px" alt="">
+                            </div>
+                            <div class="cont-prod-name">
+                                RONDO
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-link-box">
+            <div class="nav-link-head">
+                <div class="head-top">
+                    <span id="gold-text">Nyheder</span>
+                </div>
+                <div class="head-mid">
+                    <span>Bratsch-&Violastrenge</span>
+                    <span>Violinstrenge</span>
+                    <span>Cellostrenge</span>
+                    <span>Kontrabasstrenge</span>
+                </div>
+                <div class="head-bottom">
+                    <span>Guitar-& Folk strenge</span>
+                    <span>Andre strenge</span>
+                </div>
+            </div>
+            <div class="nav-link-content2">
+                <div class="content-box2">
+                    <div class="content-box2-box1">
+                        <div class="content-box2-box1-head">
+                            <span>
+                                Shop efter maerke
+                            </span>
+                            <span>
+                                <button>fiere maerker<img src="./assests/breadcrumb back left arrow (STIXGeneral).svg" width="30px" style=" transform: rotate(180deg); filter: invert(100%); z-index: 10;" alt=""></button>
+                            </span>
+                        </div>
+                        <div class="content-box1-content">
+                            <div class="content-box1-content-col">
+                                <div class="content-box1-content-row-item">
+                                    <span></span>
+                                    <span>Alle maerker</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 11 strings.webp" width="70px" alt=""></span>
+                                    <span>Thomastik</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 11 strings.webp" width="70px" alt=""></span>
+                                    <span>Pirastro</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 11 strings.webp" width="70px" alt=""></span>
+                                    <span>Corelli</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 11 strings.webp" width="70px" alt=""></span>
+                                    <span>Prim</span>
+                                </div>
+                            </div>
+                            <div class="content-box1-content-col">
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 9 strings.webp" width="70px" alt=""></span>
+                                    <span>Lenzner</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 9 strings.webp" width="70px" alt=""></span>
+                                    <span>Optima</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 9 strings.webp" width="70px" alt=""></span>
+                                    <span>D'addario</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 9 strings.webp" width="70px" alt=""></span>
+                                    <span>Westminster</span>
+                                </div>
+                                <div class="content-box1-content-row-item">
+                                    <span><img src="./assests/product assets/product item 9 strings.webp" width="70px" alt=""></span>
+                                    <span>Excelsior</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box2-box2">
+                        <div class="content-box2-box2-head content-box2-box1-head">
+                            Shop efter tilbud
+                        </div>
+                        <div class="content-box2-box2-content">
+                            <span><a href="">Forarsudsalg</a></span>
+                            <span><a href="">Startpakker</a></span>
+                            <span><a href="">Pakketilbud</a></span>
+                            <span><a href="">Restudsalg</a></span>
+                            <span><a href="">Alle tilbud</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <div class="page-head">
         <h4>FORSIDE / KONTAKT OS</h4>
     </div>
@@ -118,7 +428,8 @@
             <form action="">
                 <div class="form-row">
                     <label for="fornavn" class="form-label">Fornavn
-                        <input type="text" name="fornavn" id="fornavn" class="form-control">
+                        <input type="text" name="fornavn" id="fornavn" placeholder="påkrævet" required
+                            class="form-control">
                     </label>
                     <label for="efternavn" class="form-label">Efternavn
                         <input type="text" name="efternavn" id="efternavn" class="form-control">
@@ -126,7 +437,7 @@
                 </div>
                 <div class="form-row">
                     <label for="e_mailadresse" class="form-label">E-mailadresse
-                        <input type="text" id="e_mailadresse" class="form-control">
+                        <input type="text" id="e_mailadresse" placeholder="påkrævet" required class="form-control">
                     </label>
                     <label for="telefonnummer" class="form-label">Telefonnummer
                         <input type="text" name="telefonnummer" id="telefonnummer" class="form-control">
@@ -134,7 +445,8 @@
                 </div>
                 <div class="form-row">
                     <label for="henvendelse" class="form-label">Henvendelse
-                        <textarea name="henvendelse" id="henvendelse" class="form-control" cols="105" rows="10"></textarea>
+                        <textarea name="henvendelse" id="henvendelse" class="form-control" cols="105"
+                            rows="10"></textarea>
                     </label>
                 </div>
             </form>
@@ -202,10 +514,11 @@
                 </p>
                 <h3>Følg os</h3>
                 <div class="socials">
-                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a>
+                    &nbsp;
                     <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram" width="40px"></a></a> &nbsp;
                     <a href=""><img src="./assests//glyphs/google.svg" alt="google" width="40px"></a></a> &nbsp;
-                    <a href=""><img src="./assests//glyphs/linkedin.svg"  alt="linkedin" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/linkedin.svg" alt="linkedin" width="40px"></a></a> &nbsp;
                 </div>
             </div>
             <div class="box3">

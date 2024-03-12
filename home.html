@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
     <style>
         .navbar {
             display: flex;
@@ -18,7 +18,7 @@
             justify-content: space-between;
             padding: 2rem 6rem !important;
         }
-        
+
         .nav-search input {
             height: 40px;
             padding-left: 35px;
@@ -27,52 +27,54 @@
             border: none;
             position: relative;
             top: 5px;
-        
+
         }
-        
-        .nav-search button{
+
+        .nav-search button {
             position: relative;
             top: 5px;
             height: 40px;
             border: none;
             border-radius: 6px;
         }
-        
-        
-        .socials a{
+
+
+        .socials a {
             text-decoration: none;
             color: black;
         }
-        .socials img{
+
+        .socials img {
             background-color: #fff;
-            padding: 8px ;
+            padding: 8px;
             border-radius: 5px;
         }
-        
+
         .socials {
             font-size: 32px;
             display: flex;
             justify-content: center;
         }
-        .socials img{
-            height:36px !important;
-            width:36px !important;
+
+        .socials img {
+            height: 36px !important;
+            width: 36px !important;
         }
-        .socials{
+
+        .socials {
             display: flex;
             align-items: center !important;
             justify-content: center !important;
         }
+
         .right img {
             /* Rotate the image by 45 degrees */
             transform: rotate(180deg);
             z-index: 100;
             top: -2;
-          }
-        
-       
+        }
 
-        /*Review Boxes*/
+
        
     </style>
     <link rel="stylesheet" href="home.css">
@@ -89,7 +91,7 @@
                     <div id="search-icon"><img src="./assests//glyphs/search magnifying glass.svg" width="20px"
                             height="20px" alt=""></div>
                     <input type="text" placeholder="Søg" class="form-control">
-                    <button class=" search-btn px-4 ">Kontakt</button>
+                    <button class=" search-btn px-4"><a href="/kontakt_os.html">Kontakt</a></button>
                     <div class="socials">
                         <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook"></a>
                         &nbsp;
@@ -110,12 +112,12 @@
             <a href="">Reparationer</a>
         </div>
     </nav>
-   
+
     <main>
         <div class="hero-container">
             <div class="arrow left" onclick="prevSlide()">
                 <img src="./assests/front page assets/carrousel arrow left.svg" alt="">
-                
+
             </div>
             <div class="slider">
                 <div class="slide">
@@ -152,8 +154,101 @@
                 <div class="dot" onclick="showSlide(2)"></div>
             </div>
         </div>
+        <div class="separator">
+        </div>
+        <div class="review-container">
+            <span id="review-arrow">
+                <img src="./assests/front page assets/carrousel arrow left.svg" width="100px"
+                    alt=""></span>
+            <div class="review-boxes">
+                <!-- Review Box 1 -->
+                <div class="review-box">
+                    <div class="user-img">
+                        <img src="./assests/front page assets/customer review profile picture D.svg" alt="User 1"
+                            class="user-img">
+                        <p class="username">
+                            Claudia Francisca
+                            <img src="./assests/front page assets/customer review rating star row gold.svg" alt="">
+                        </p>
+                    </div>
 
-        
+                    <div class="review-text">
+                        <p class="review-body">
+                            Nullam lorem sapien,tempus <br>
+                            ac,fringilla at,elementum sed, <br>
+                            purus.Duis molestie pede. <br>
+                            Vivamus quis odio sit amer <br>
+                            libero sodales tincidunt.Nam <br>
+                            sit amet metus vitae lectus. <br>
+                            <b>Vis mere</b>
+                        </p>
+                    </div>
+                    <div class="review-bottom">
+                        <p class="review-date"><img
+                                src="./assests/front page assets/customer review source trustpilot.svg" width="20px"
+                                alt=""> 4 dage siden</p>
+                    </div>
+                </div>
+
+
+
+                <div class="review-box">
+                    <div class="user-img">
+                        <img src="./assests/front page assets/customer review profile picture T.svg" alt="User 1"
+                            class="user-img">
+                        <p class="username">
+                            Torben Kvist
+                            <img src="./assests/front page assets/customer review rating star row gold.svg" alt="">
+                        </p>
+                    </div>
+
+                    <div class="review-text">
+                        <p class="review-body">
+                            Integer sed rius.Aenean <br>
+                            mollis.Donec facilisis egestas <br>
+                            quam.Duis bibendum augue <br>
+                            Vivamus quis odio sit amer <br>
+                            id mauris.Sed laoreet. <br>
+                        </p>
+                    </div>
+                    <div class="review-bottom">
+                        <p class="review-date"><img src="./assests/front page assets/customer review source google.svg"
+                                width="20px" alt=""> 14 dage siden</p>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="user-img">
+                        <img src="./assests/front page assets/customer review profile picture C.svg" alt="User 1"
+                            class="user-img">
+                        <p class="username">
+                            Danielle
+                            <img src="./assests/front page assets/customer review fb recommendation logo and text.svg"
+                                alt="">
+                        </p>
+                    </div>
+
+                    <div class="review-text">
+                        <p class="review-body">
+                            Mauris vitae mauris sit amet <br>
+                            est rhoncus laoreet.Curabitur <br>
+                            facilisis,urna vel egestas <br>
+                            vulputate,tellus purus<br>
+                            accumsan ante,quis facilisis <br>
+                            dui nisl a nunc.Nulla <br>
+                        </p>
+                    </div>
+                    <div class="review-bottom">
+                        <p class="review-date"><img src="./assests/front page assets/customer review source google.svg"
+                                width="20px" alt=""> 1 maned siden</p>
+                    </div>
+                </div>
+            </div>
+            <span id="review-arrow-left"><img src="./assests/front page assets/carrousel arrow left.svg" style="transform: rotate(180deg);" width="100px"
+                alt=""></span>
+        </div>
+
+
     </main>
 
 
@@ -206,14 +301,15 @@
                     Brug for hjaelp?
                 </h3>
                 <p>
-                    <button class="btn btn-light px-4 border-black py-2 fs-5 kontakt-btn">Kontakt</button>
+                    <button class="btn btn-light px-4 border-black py-2 fs-5 kontakt-btn"><a href="/kontakt_os.html">Kontakt</a></button>
                 </p>
                 <h3>Følg os</h3>
                 <div class="socials">
-                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/facebook.svg" alt="facebook" width="40px" height="40px"></a>
+                    &nbsp;
                     <a href=""><img src="./assests//glyphs/instagram.svg" alt="instagram" width="40px"></a></a> &nbsp;
                     <a href=""><img src="./assests//glyphs/google.svg" alt="google" width="40px"></a></a> &nbsp;
-                    <a href=""><img src="./assests//glyphs/linkedin.svg"  alt="linkedin" width="40px"></a></a> &nbsp;
+                    <a href=""><img src="./assests//glyphs/linkedin.svg" alt="linkedin" width="40px"></a></a> &nbsp;
                 </div>
             </div>
             <div class="box3">
@@ -276,7 +372,7 @@
 
         //REview script
 
-        
+
 
     </script>
 </body>

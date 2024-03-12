@@ -668,3 +668,9 @@
     padding-bottom: 0.5rem;
     margin-bottom: 4rem;
 }
+
+.box3 p{
+    text-align: start;
+    padding: 7px 120px;
+    font-size: 20px;   
+}
